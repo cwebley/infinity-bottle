@@ -62,3 +62,17 @@ photos of moments
         }
     }
 },
+
+  postgres stuff:
+
+pull and create the image:
+
+docker pull postgres
+docker run --name myPostgresDb -p 5455:5432 -e POSTGRES_USER=postgresUser -e POSTGRES_PASSWORD=postgresPW -e POSTGRES_DB=postgresDB -d postgres
+
+
+see all env that was defined:
+docker exec myPostgresDb env
+
+run psql:
+docker exec -it myPostgresDb psql -U postgresUser postgresDB
