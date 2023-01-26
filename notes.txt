@@ -1,0 +1,64 @@
+needs to be mobile friendly
+place bottle on scale while filling to always get a weight
+
+abv of bottle
+view contents by fraction
+view contents by type of whisky
+view contents by abv
+view contents by price
+view infinity bottle "depth"
+
+history of additions
+history of pours
+photos of moments
+
+
+/contribute or /addition or /blend weigh bottle before and after
+/drink weigh bottle before and after
+/taste add tasting notes from a person
+/siphon aka change containers. old weight and new weight
+
+
+"users": {
+    "cwebley": {
+        "name": "Cameron Webley",
+        // only meta information about each blend stored under the blend's unique id
+        "blends": {
+            "elevenhouseblend": {
+                "startDate": 125125123,
+                "lastDrink": "",
+                "lastAddition": "",
+                "lastAdditionTime": 12512566,
+                "proof": 95,
+
+            }
+        },
+        "additions": {
+            "some_uid": {
+                "name": "Evan Williams Single Barrel"
+                "proof": 90,
+                "whenAdded": 125235235,
+                "bottleWeightBefore": 0,
+                "bottleWeightAfter": 2.45,
+            }
+            "some_uid": {
+                "name": "Blantons Single Barrel"
+                "proof": 100,
+                "whenAdded": 125235255,
+                "bottleWeightBefore": 2.45,
+                "bottleWeightAfter": 2.75,
+            }
+        }
+        "pours": {
+            "some_uid": {
+                "timeStamp": 1245126,
+                "bottleWeightBefore": 2.75,
+                "bottleWeightAfter": 2.55,
+                "photo": dunno how to store this yet
+            }
+        }
+        "history": {
+            // additions and pours all in order with a type field
+        }
+    }
+},
